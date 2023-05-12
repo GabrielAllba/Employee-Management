@@ -24,7 +24,7 @@ public class karyawanDao {
     public void insertKaryawan(Karyawan d){
         con = dbCon.makeConnection();
         String sql = "INSERT INTO karyawan(id, nama, jenis, tahunMasuk, noTelepon, bebanMengajar, jamKerja) "+ "VALUES ('" + d.getId()+"', '"+d.getNama()+"', '"+d.getJenis()+"', '"+d.getTahunMasuk()+"','"+d.getNoTelepon()+"', '"+d.getBebanMengajar()+"', '"+d.getJamKerja()+"')";
-        System.out.println("Adding karyawan bro...");
+        System.out.println("Adding karyawan bro test...");
         
         try{
             Statement statement = con.createStatement();
